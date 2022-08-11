@@ -8,6 +8,10 @@ const router = createRouter({
             path: '/',
             name: 'listLength',
             component: listLength
+        },
+        {
+            path:'/themeColor',
+            component: () => import('../views/themeColor.vue')
         }
     ]
 })

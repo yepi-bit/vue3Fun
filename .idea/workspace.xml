@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fde73b00-ec79-4295-8de4-4af4a4c120e1" name="Default Changelist" comment="" />
+    <list default="true" id="fde73b00-ec79-4295-8de4-4af4a4c120e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeColorEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/systemConfig.store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/adLoadsh.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/static.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/theme.class.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/themeColor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,22 +25,31 @@
       <list>
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DC9QrpxNZ6hQvA1aUOxjLe5I7K" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="D:\功能项目vue\vue3Fun\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -46,32 +68,27 @@
       <workItem from="1660193753725" duration="950000" />
       <workItem from="1660195511232" duration="5000" />
       <workItem from="1660195798021" duration="287000" />
+      <workItem from="1660210912158" duration="143000" />
+      <workItem from="1660211068992" duration="18000" />
+      <workItem from="1660213855064" duration="842000" />
+      <workItem from="1660214725005" duration="277000" />
+      <workItem from="1660215043147" duration="81000" />
+      <workItem from="1660215138432" duration="88000" />
+      <workItem from="1660215307674" duration="84000" />
+      <workItem from="1660215447813" duration="349000" />
+      <workItem from="1660215870262" duration="165000" />
+      <workItem from="1660216212356" duration="48000" />
+      <workItem from="1660216295100" duration="225000" />
+      <workItem from="1660216534668" duration="189000" />
+      <workItem from="1660216923917" duration="374000" />
+      <workItem from="1660218392877" duration="147000" />
+      <workItem from="1660218635379" duration="468000" />
+      <workItem from="1660220215405" duration="2515000" />
+      <workItem from="1660224043713" duration="115000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660192947634">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1660192947634" />
-    <state width="1894" height="175" key="GridCell.Tab.0.bottom" timestamp="1660192647990">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1894" height="175" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1660192647990" />
-    <state width="1894" height="175" key="GridCell.Tab.0.center" timestamp="1660192647989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1894" height="175" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1660192647989" />
-    <state width="1894" height="175" key="GridCell.Tab.0.left" timestamp="1660192647989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1894" height="175" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1660192647989" />
-    <state width="1894" height="175" key="GridCell.Tab.0.right" timestamp="1660192647989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1894" height="175" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1660192647989" />
+    <option name="version" value="3" />
   </component>
 </project>
