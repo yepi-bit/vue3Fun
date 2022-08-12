@@ -1,7 +1,8 @@
-import { createStore } from "vuex";
+import {createStore} from "vuex";
 
 const store = createStore({
     state: {
+        themecolor: "",
         playmvstop: false,
         url1: "",
         i: 0,
@@ -61,6 +62,9 @@ const store = createStore({
         },
         showmusic(state) {
             return state.url1
+        },
+        showColor(state) {
+            return state.themecolor
         },
         playi(state) {
             return state.i

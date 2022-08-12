@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fde73b00-ec79-4295-8de4-4af4a4c120e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/zanplus.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <workItem from="1660224043713" duration="115000" />
       <workItem from="1660270203620" duration="13000" />
       <workItem from="1660275621595" duration="616000" />
-      <workItem from="1660288486021" duration="13032000" />
+      <workItem from="1660288486021" duration="14130000" />
     </task>
     <servers />
   </component>

@@ -24,6 +24,7 @@
         </div>
       </transition>
     </div>
+    <div style="margin-right: 36px"><el-color-picker v-model="themecolor" show-alpha @change="showTheme" />主题</div>
     <div :class="[num >= 1 ? 'right-box': '']">
       <div class="around">
         <span class="comBo" style="font-weight: bold;" @click="comBo">COMBO</span>
@@ -53,10 +54,19 @@
 </template>
 <script setup>
 import {ref, reactive, onMounted} from 'vue'
+import { useStore } from 'vuex'
+const store = useStore();
 import {Share, Loading, Search} from '@element-plus/icons-vue';
 import animated from 'animate.css'
 import {ElMessage} from 'element-plus'
 
+
+const themecolor = ref('203, 237, 218, 1')
+const showTheme = (preset) => {
+  store.commit('setthmeColor', preset)
+  themecolor.value = store.getters.showColor
+  document.querySelector("body").setAttribute("style", `background-color:${themecolor.value};transition: 0.7s;`);
+}
 onMounted(() => {
   around()
 })
