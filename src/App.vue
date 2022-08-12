@@ -24,6 +24,11 @@
         </div>
       </transition>
     </div>
+    <div class="around">
+      <div class="around-item" v-for="item in 5" :key="item">
+        <img src="./assets/logo.png" alt=""/>
+      </div>
+    </div>
   </div>
   <div>
     <router-link to="/">
@@ -33,6 +38,10 @@
     <router-link to="/themeColor">
       <el-button type="danger" ghost>themeColor</el-button>
     </router-link>
+    |
+    <router-link to="/player">
+      <el-button type="danger" ghost>player</el-button>
+    </router-link>
   </div>
 
   <div>
@@ -40,9 +49,26 @@
   </div>
 </template>
 <script setup>
-import {ref, reactive} from 'vue'
+import {ref, reactive, onMounted} from 'vue'
 import {Share, Loading, Search} from '@element-plus/icons-vue';
+import animated from 'animate.css'
 
+onMounted(() => {
+  around()
+})
+const around = () => {
+  const items = document.querySelectorAll('.around .around-item')
+  const r = document.querySelectorAll('.around')[0].clientWidth / 2
+  console.log(r)
+  const count = items.length
+  const deg = 360 / count
+  for (let i = 0; i < count; i++) {
+    let t = i * deg
+    t = (Math.PI / 180) * t
+    const x = Math.sin(t) * r, y = -Math.cos(t) * r
+    items[i].style.transform = `translate(${x}px, ${y}px)`;
+  }
+}
 const tabs = reactive({
   active: '0',
   list: [
@@ -59,6 +85,34 @@ const tabs = reactive({
 const visibleClick = ref(false)
 </script>
 <style lang="less">
+.around {
+  width: 100px;
+  height: 100px;
+  /*outline: 1px solid royalblue;*/
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move 20s linear infinite;
+}
+
+.around .around-item {
+  position: absolute;
+}
+
+.around img {
+  width: 20px;
+  height: 20px;
+  animation: move 20s linear infinite reverse;
+}
+
+@keyframes move {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .box {
   position: fixed;
   right: 40px;

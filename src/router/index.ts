@@ -12,6 +12,10 @@ const router = createRouter({
         {
             path:'/themeColor',
             component: () => import('../views/themeColor.vue')
+        },
+        {
+            path:'/player',
+            component: () => import('../views/player.vue')
         }
     ]
 })
