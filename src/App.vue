@@ -24,9 +24,12 @@
         </div>
       </transition>
     </div>
-    <div class="around">
-      <div class="around-item" v-for="item in 5" :key="item">
-        <img src="./assets/logo.png" alt=""/>
+    <div :class="[num >= 1 ? 'right-box': '']">
+      <div class="around">
+        <span class="comBo" style="font-weight: bold;" @click="comBo">COMBO</span>
+        <div class="around-item" v-for="item in 5" :key="item">
+          <img src="./assets/logo.png" alt=""/>
+        </div>
       </div>
     </div>
   </div>
@@ -52,6 +55,7 @@
 import {ref, reactive, onMounted} from 'vue'
 import {Share, Loading, Search} from '@element-plus/icons-vue';
 import animated from 'animate.css'
+import {ElMessage} from 'element-plus'
 
 onMounted(() => {
   around()
@@ -69,6 +73,7 @@ const around = () => {
     items[i].style.transform = `translate(${x}px, ${y}px)`;
   }
 }
+
 const tabs = reactive({
   active: '0',
   list: [
@@ -82,6 +87,13 @@ const tabs = reactive({
     }
   ]
 })
+const num = ref(0)
+const comBo = () => {
+  num.value += 1
+  setTimeout(() => {
+    num.value = 0
+  }, 800)
+}
 const visibleClick = ref(false)
 </script>
 <style lang="less">
@@ -111,6 +123,28 @@ const visibleClick = ref(false)
   to {
     transform: rotate(360deg);
   }
+}
+
+.right-box::after {
+  content: '';
+  background: url(./assets/zanplus.webp) no-repeat;
+  position: absolute;
+  background-size: 100%;
+  top: 70%;
+  right: 70%;
+  width: 100px;
+  height: 100px;
+  color: transparent;
+}
+
+.comBo {
+  font-size: 21px;
+  color: cornflowerblue;
+}
+
+.comBo:hover {
+  font-size: 26px;
+  color: darkorange;
 }
 
 .box {
