@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fde73b00-ec79-4295-8de4-4af4a4c120e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/heros.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
         <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -51,6 +55,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="ts.external.directory.path" value="D:\功能项目vue\vue3Fun\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -92,7 +97,20 @@
       <workItem from="1660224043713" duration="115000" />
       <workItem from="1660270203620" duration="13000" />
       <workItem from="1660275621595" duration="616000" />
-      <workItem from="1660288486021" duration="14130000" />
+      <workItem from="1660288486021" duration="14184000" />
+      <workItem from="1660367575219" duration="10000" />
+      <workItem from="1660367603040" duration="917000" />
+      <workItem from="1660485840563" duration="170000" />
+      <workItem from="1660549517021" duration="3894000" />
+      <workItem from="1660553856296" duration="36000" />
+      <workItem from="1660553947546" duration="766000" />
+      <workItem from="1660647219148" duration="27000" />
+      <workItem from="1660713601934" duration="1530000" />
+      <workItem from="1660722954172" duration="13000" />
+      <workItem from="1660815346635" duration="2705000" />
+      <workItem from="1660818285394" duration="184000" />
+      <workItem from="1660818518410" duration="138000" />
+      <workItem from="1660818698205" duration="893000" />
     </task>
     <servers />
   </component>

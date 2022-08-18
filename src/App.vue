@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div style="float: right;margin-right: 100px;height: 20px" class="history">
-      <el-icon color="#000" :size="30" @click="visibleClick = !visibleClick">
+      <el-icon :color="color" :size="30" @click="visibleClick = !visibleClick">
         <Share/>
       </el-icon>
       <!--        <Search style="width: 1em; height: 1em; margin-right: 8px"/>-->
@@ -24,10 +24,13 @@
         </div>
       </transition>
     </div>
-    <div style="margin-right: 36px"><el-color-picker v-model="themecolor" show-alpha @change="showTheme" />主题</div>
+    <div style="margin-right: 36px">
+      <el-color-picker v-model="themecolor" show-alpha @change="showTheme"/>
+      主题
+    </div>
     <div :class="[num >= 1 ? 'right-box': '']">
       <div class="around">
-        <span class="comBo" style="font-weight: bold;" @click="comBo">COMBO</span>
+        <span class="comBo" :style="{color: color,fontWeight:'bold'}" @click="comBo">COMBO</span>
         <div class="around-item" v-for="item in 5" :key="item">
           <img src="./assets/logo.png" alt=""/>
         </div>
@@ -46,6 +49,10 @@
     <router-link to="/player">
       <el-button type="danger" ghost>player</el-button>
     </router-link>
+    |
+    <router-link to="/heros">
+      <el-button type="danger">heros</el-button>
+    </router-link>
   </div>
 
   <div>
@@ -54,17 +61,19 @@
 </template>
 <script setup>
 import {ref, reactive, onMounted} from 'vue'
-import { useStore } from 'vuex'
+import {useStore} from 'vuex'
+
 const store = useStore();
 import {Share, Loading, Search} from '@element-plus/icons-vue';
 import animated from 'animate.css'
 import {ElMessage} from 'element-plus'
 
-
-const themecolor = ref('203, 237, 218, 1')
+const color = ref('rgb(49, 217, 136, 1)')
+const themecolor = ref('rgb(203, 237, 218, 1)')
 const showTheme = (preset) => {
   store.commit('setthmeColor', preset)
   themecolor.value = store.getters.showColor
+  color.value = store.getters.showColor
   document.querySelector("body").setAttribute("style", `background-color:${themecolor.value};transition: 0.7s;`);
 }
 onMounted(() => {
@@ -106,7 +115,7 @@ const comBo = () => {
 }
 const visibleClick = ref(false)
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .around {
   width: 100px;
   height: 100px;
@@ -149,7 +158,6 @@ const visibleClick = ref(false)
 
 .comBo {
   font-size: 21px;
-  color: cornflowerblue;
 }
 
 .comBo:hover {
@@ -164,13 +172,13 @@ const visibleClick = ref(false)
   display: flex;
   align-items: center;
   z-index: 8;
-
+}
 .history {
   position: relative;
   user-select: none;
+}
 
-&
--content {
+.history-content {
   position: absolute;
   right: 30px;
   top: 100%;
@@ -181,19 +189,6 @@ const visibleClick = ref(false)
   border-radius: 4px;
   overflow: hidden;
   animation-duration: 0.625s;
-
-::v-deep(.el-tabs) {
-
-.el-tabs__header {
-  box-sizing: border-box;
-  padding: 0 36px;
-
-.el-tabs__active-bar {
-  background-color: lemonchiffon;
-}
-
-.el-tabs__item {
-  color: coral;
 }
 
 .el-tabs__item.is-active,
@@ -201,10 +196,9 @@ const visibleClick = ref(false)
   color: cornflowerblue;
 }
 
-}
-
 .el-tabs__content {
   margin-bottom: 10px;
+}
 
 .el-tab-pane {
   display: flex;
@@ -212,9 +206,4 @@ const visibleClick = ref(false)
   gap: 14px;
 }
 
-}
-}
-}
-}
-}
 </style>
