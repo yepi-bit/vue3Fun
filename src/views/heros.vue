@@ -17,7 +17,7 @@
           </el-select>
         </template>
         <template #append>
-          <el-icon :size="30" @click="clickSearch">
+          <el-icon :size="30" @click="clickSearch(input)">
             <Loading/>
           </el-icon>
         </template>
@@ -46,27 +46,41 @@ export default {
         {id: 2, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/154/154.jpg", name: "花木兰", type: 'Z'},
         {id: 3, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/141/141.jpg", name: "貂蝉", type: 'F'},
         {id: 4, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/107/107.jpg", name: "赵云", type: 'Y'},
-        {id: 5, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/144/144.jpg", name: "程咬金", type: 'T'}
+        {id: 5, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/144/144.jpg", name: "程咬金", type: 'T'},
+        {id: 6, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/196/196.jpg", name: "百里守约", type: 'S'},
+        {id: 7, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg", name: "李白", type: 'D'},
+        {id: 8, img: "//game.gtimg.cn/images/yxzj/img201606/heroimg/195/195.jpg", name: "百里玄策", type: "Z"}
       ]
     }
   },
   methods: {
     change(options) {
-      console.log(options)
+      if (options === '') {
+        location.reload();
+        return this.heroList
+      }
     },
-    clickSearch() {
-      if(this.input !== '') {
-        this.heroList.map((o)=> {
-          o.name === this.input
-        })
-        return o.name
+    clickSearch(input) {
+      if (this.input !== '') {
+        let le = this.heroList.filter((item) => item.name.includes(this.input))
+        let reg = new RegExp(this.input, 'g')
+        console.log(reg)
+        if (reg) {
+          le.map((o) => {
+            console.log(o)
+            return o.name.replace(reg, function (input) {
+              return `<em style="font-size: 21px;color:royalblue">${input}</em>`
+            })
+          })
+        }
+        this.heroList = le
       }
     }
   }
 }
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .container {
   margin: 60px auto;
 
@@ -91,12 +105,14 @@ export default {
   flex: 1;
   text-align: center;
 }
-.heroBox .heroBox-item img{
+
+.heroBox .heroBox-item img {
   border: 2px solid #258DF2;
   border-radius: 10px 0 10px 0;
 }
-.heroBox .heroBox-item p { // p是块元素，span行内元素
-  margin: 15px;
+
+.heroBox .heroBox-item p {
+  /*// p是块元素，span行内元素 margin: 15 px;*/
   font-size: 14px;
   font-weight: bold;
 }
