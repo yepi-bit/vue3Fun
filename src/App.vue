@@ -53,6 +53,10 @@
     <router-link to="/heros">
       <el-button type="danger">heros</el-button>
     </router-link>
+    |
+    <router-link to="/changeValue">
+      <el-button type="danger">changeValue</el-button>
+    </router-link>
   </div>
 
   <div>

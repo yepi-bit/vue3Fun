@@ -20,6 +20,10 @@ const router = createRouter({
         {
             path:'/heros',
             component: () => import('../views/heros.vue')
+        },
+        {
+            path:'/changeValue',
+            component: () => import('../views/changeValue.vue')
         }
     ]
 })
