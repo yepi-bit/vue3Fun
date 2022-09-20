@@ -10,4 +10,7 @@ import { createPinia } from 'pinia'
 // createTheme()
 import store from './stores/index'
 
-createApp(App).use(store).use(createPinia()).use(router).use(ElementPlus).mount('#app')
+import { Swipe, SwipeItem } from 'vant';
+import 'vant/lib/index.css';
+
+createApp(App).use(store).use(createPinia()).use(router).use(Swipe).use(SwipeItem).use(ElementPlus).mount('#app')

@@ -57,6 +57,10 @@
     <router-link to="/changeValue">
       <el-button type="danger">changeValue</el-button>
     </router-link>
+    |
+    <router-link to="/swiper">
+      <el-button type="danger">swiper</el-button>
+    </router-link>
   </div>
 
   <div>

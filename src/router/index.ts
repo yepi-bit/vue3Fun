@@ -24,6 +24,10 @@ const router = createRouter({
         {
             path:'/changeValue',
             component: () => import('../views/changeValue.vue')
+        },
+        {
+            path:'/swiper',
+            component: () => import('../views/swiper.vue')
         }
     ]
 })
