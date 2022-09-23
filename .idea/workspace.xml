@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fde73b00-ec79-4295-8de4-4af4a4c120e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/swiper.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/swiper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/swiper.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,12 @@
       <workItem from="1662555232454" duration="34000" />
       <workItem from="1663509019718" duration="11000" />
       <workItem from="1663588447398" duration="46000" />
-      <workItem from="1663672494160" duration="873000" />
+      <workItem from="1663672494160" duration="1061000" />
+      <workItem from="1663845247775" duration="93000" />
+      <workItem from="1663845441489" duration="2088000" />
+      <workItem from="1663940454519" duration="8000" />
+      <workItem from="1663941215364" duration="4024000" />
+      <workItem from="1663948481868" duration="3844000" />
     </task>
     <servers />
   </component>
